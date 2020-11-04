@@ -2,9 +2,9 @@
 
 Clone the repo
 
-Open in VSCode
-Open terminal
-Type npm install
-Type node app.js
+Open in VSCode<br>
+Open terminal<br>
+Type npm install<br>
+Type node app.js<br>
 
 Go to localhost 
