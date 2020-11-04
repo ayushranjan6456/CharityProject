@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add items</title>
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/css/Landingpage.css">
+
+    <!-- Modal -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 300px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 20%;
+            height: 40%;
+            font-size: 35px;
+            text-align: center;
+            border: 5px solid #2E3F61;
+            border-radius: 15px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body style="background:url('/images/dot.jpeg')">
+    <section style="padding: 210px 470px;">
+        <div class="card" style="width: 500px; border: 5px solid #2E3F61; border-radius: 15px;">
+            <div class="card-body">
+                <h3 class="text-center">Donation</h3>
+            </div>
+        </div>
+
+        <div class="card" style="width: 500px; border: 5px solid #2E3F61; border-radius: 15px;">
+            <div class="card-body">
+                <% items.forEach(function(item){ %>
+                <div class="row no-gutters img-thumbnail" style="margin: 20px; padding: 20px">
+                    <div class="col-12 col-sm-6 col-md-8">
+                        <h4 class=" font-weight-bold">Name : <%= item.firstname+' '+item.lastname %></h4>
+                        <h5 class="about">Contact: <%= item.contact %> </h5>
+                        <h5 class="about">Email: <%= item.email %> </h5>
+                        <h5 class="about">Address: <%= item.address %> </h5>
+                    </div>
+                </div>
+                <% }) %>
+                <div class="form-group" style="display: flex; justify-content:center; margin-top: 10px;">
+                    <a class="btn btn-success" href="/"
+                        style="padding:15px 30px; font-size: 20px; ">Back</a>
+
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>

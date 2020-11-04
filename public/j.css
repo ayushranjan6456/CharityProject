@@ -1,0 +1,645 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins',sans-serif;
+ scroll-behavior: smooth;
+ position: relative;
+}
+body{
+ height: calc(100vh - 8em);
+ color: rgba(255,255,255,0.75);
+ background-color:white;
+}
+header{
+ background-color: #97979771;
+ position:fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 1% 5%;
+ z-index: 1000;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transition: 0.5s;
+}
+.colen
+{
+ font-size: 40px;
+}
+.po
+{
+ width: 350px;
+}
+header.sticky
+{
+ background: #ffffff;
+ padding: 20px 100px;
+ box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo
+{
+ color: #000000;
+ font-size: 35px;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-weight: 700;
+ letter-spacing: 2px;
+ top: 5px;
+
+}
+header.sticky .logo
+{
+ color: #111;
+}
+header ul {
+ position: relative;
+ display:flex;
+}
+header ul li
+{
+ position: relative;
+ list-style: none;
+ font-size: 25px;
+}
+header ul li a
+{
+ position: relative;
+ display: inline-block;
+ margin: 0 15px;
+ color: #fff;
+ text-decoration: none;
+ font-weight: bold;
+ transition: 0.2s;
+}
+header ul li :hover,
+header.sticky ul li :hover
+{
+ color: #ff0037;
+ font-size:28px ;
+}
+header.sticky ul li a
+{ color: #111;
+ transition: 0.2s;
+}
+.banner
+{
+ position: relative;
+ min-height: 100%;
+ background: url(https://adeephd.files.wordpress.com/2015/06/wpid-untitled-11-1000x350.jpg);
+ background-size: cover;
+ background-position: right;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.banner h3{
+ margin: 0;
+ padding: 0;
+ position: absolute;
+ top: 40%;
+ width: 100%;
+ display: inline-block;
+ text-align: right;
+ color: #fbff00;
+ right: 10%;
+ font-size: 2em;
+}
+.banner h4{
+ margin: 0;
+ padding: 0;
+ position: absolute;
+ top: 45%;
+ width: 100%;
+ display: inline-block;
+ text-align: right;
+ right: 10%;
+ color: rgb(0, 225, 255);
+ font-size: 2em;
+}
+.banner h1{
+ margin: 0;
+ padding: 0;
+ z-index: 10;
+ position: absolute;
+ top: 60%;
+ width: 80%;
+ display: inline-block;
+ text-align: center;
+ color: orange;
+ right: 10%;
+ font-size: 3.5em;
+ animation: type 4s steps(37);
+ overflow: hidden;
+ white-space: nowrap;
+}
+.flexbox-container{
+ display: flex;
+ justify-content: center;
+ margin-inline-start: 100px;
+ padding: 100px;
+}
+.flexbox-item {
+ z-index: 30;
+ width: 600px;
+ margin-top: -270px;
+ margin-right: 70px;
+ background-color: rgba(255, 2, 2, 0.801);
+ border: 3px solid #333333;
+ min-height: 210px;
+ margin-bottom: 100px;
+ padding-right: 150px;
+ padding-top: 1%;
+ padding-left: 1%;
+}
+.flexbox-item-1 ,.flexbox-item-2 ,.flexbox-item-3{
+ background-color: rgb(238, 255, 0);
+ padding: 30px;
+ color:white;
+ font-size: 1.25em;
+ padding-right: 150px;
+ font-family: 'Roboto', sans-serif;
+}
+.vertical {
+ border-left: 4px solid white;
+ height: 150px;
+ position: absolute;
+ right: 23%;
+ top: 20%;
+}
+.value1 {
+ position: absolute;
+ top: 50%;
+ right:3%;
+ font-size: 1.25em;
+ font-weight: bold;
+}
+.value2{
+ position: absolute;
+ top: 50%;
+ right:7%;
+ font-size: 1.25em;
+ font-weight: bold;
+}
+.flexbox-item-2{
+ background-color: rgb(255, 38, 0);
+}
+.flexbox-item-3{
+ background-color: rgb(170, 255, 0);
+}
+.headclass
+ {
+ margin-top: -150px;
+ margin-bottom: 25px;
+ margin-left: 15px;
+ }
+ .anisha img {
+ align-items: center;
+ width: 400px;
+ height: 300px;
+ margin-top: -20px;
+ }
+ .mm {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ margin: 10px;
+ padding: 4px 5px 60px 60px;
+ color: black;
+ }
+ section .form {
+ text-align: center;
+ font-size: 30px;
+ margin: 20px;
+ padding-top: 20px;
+ color: black;
+ }
+ .box h1 {
+ padding-top: 80px;
+ font-size: 70px;
+ color: black;
+ font-family: -applesystem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cant
+arell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .box {
+ font-size: 20px;
+ text-align: center;
+ justify-content: center;
+ color: black;
+ margin: 100px;
+ }
+ #contact {
+ text-align: center;
+ font-size: large;
+ padding-top: 54px;
+ }
+ .values {
+ text-align: center;
+ font-size: large;
+ padding-top: 54px;
+ } 
+ #btn {
+ background-color: red;
+ color: white;
+ font-size: large;
+ font-weight: bold;
+ padding: 15px;
+ margin-top: 15px;
+ margin-right: 11px;
+ }
+ #btn1 {
+ margin-right: 11px;
+ font-size: large;
+ padding-left: 20px;
+ font-weight: bold;
+ padding: 15px;
+ }
+ .btns
+ {
+ align-items: center;
+ }
+ #Progress_Status1 {
+ width: 50%;
+ background-color: gray;
+ border: 1px solid rgba(1,1,1,0.75);
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+ }
+ #Progress_Status2{
+ width: 45%;
+ background-color: gray;
+ border: 1px solid rgba(1,1,1,0.75);
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+ }
+ #Progress_Status3
+ {
+ width: 50%;
+ background-color: gray;
+ border: 1px solid rgba(1,1,1,0.75);
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+ }
+ #percent
+ {
+ padding-left: 200px;
+ padding-top: -20px;
+ margin: 3px;
+ color: black;
+ }
+ .values
+ {
+ background: url('https://www.jakpost.travel/wimages/large/119-1192991_child-and-poverty-wallpapers-child-poverty-in-ireland.jpg')no-repeat center center/cover;
+ background-color: rgb(255,52,82);
+ height: 550px;
+ opacity: 0.9;
+ }
+ .key
+ {
+ height:100px;
+ margin-top: -40px;
+ padding-top: 11px;
+ padding-bottom: 5px;
+ color: whitesmoke;
+ background-color:rgba(1,1,1,0.75);
+ }
+ .key2{
+ color:cornsilk;
+ border:2px solid whitesmoke;
+ height:250px;
+ display: inline-block;
+ margin: 100px 87px;
+ padding: 23px 34px;
+ width: 25%;
+ box-sizing: border-box;
+ }
+ .key #para2{
+ font-size: 24px;
+ }
+ .key2 #first {
+ font-size: large;
+ margin-top: 34px;
+ }
+ .key2 #second {
+ font-size: large;
+ margin-top: 34px;
+ }
+#para {
+ font-size: 20px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .forest{
+ display:flex;
+ justify-content:space-around;
+ }
+ #donate{
+ height:40px;
+ }
+ #Volunteer{
+ height:40px;
+ }
+ .donation {
+ display: flex;
+ flex-direction: columns;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background: #fff;
+ }
+ .he
+ {
+ margin-bottom: 10px;
+ }
+ .prishita
+ {
+ margin-left: 20px;
+ margin-top:20px;
+ margin-bottom: 20px;
+ }
+ .vole
+ {
+ margin-left: 20px;
+ top: 8px;
+ }
+ .volee
+ {
+ padding-right: 10px;
+ top: 8px;
+ }
+ .subkabaap
+ {
+ display: flex;
+ flex-direction: column;
+ }
+ .im
+ {
+ width: 550px;
+ padding:20px;
+ }
+ .container
+ {
+ width:100%;
+ padding: 2%;
+ display:flex ;
+ margin: 50px;
+ border: 4px solid rgb(255, 52, 82);
+ justify-content: center;
+ background-image:url("donation.jpeg");
+ }
+ .con{
+ width:100%;
+ padding: 2%;
+ display:flex ;
+ margin: 50px;
+ border: 4px solid rgb(255, 52, 82);
+ }
+ .cont
+ {
+ width:100%;
+ padding: 2%;
+ display:flex ;
+ margin: 50px;
+ border: 4px solid #111;
+ }
+ .loim
+ {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right:20px ;
+ }
+ .form3
+ { display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 150px;
+ }
+ .con h2
+ {
+ width:100%;
+ color:rgb(255,52,82);
+ font-size: 36px;
+ text-align: center;
+ margin-bottom: 10px;
+ }
+ .cont h2 ,.container h2
+ {
+ color:black;
+ }
+ .container .row100,.cont .row100,.con .row100
+ {
+ position: relative;
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ }
+ .container .row100 .col,
+ .cont .row100 .col,
+ .con .row100 .col
+ {
+ position: relative;
+ width:100%;
+ padding: 0 10px;
+ margin: 30px 0 10px;
+ transition: 0.5s;
+ }
+ .container .row100 .col .inputbox,
+ .cont .row100 .col .inputbox,
+ .con .row100 .col .inputbox
+ {
+ position: relative;
+ width: 100%;
+ height: 40px;
+ color: rgb(255, 52, 82);
+ }
+ .container .row100 .col .inputbox input,
+ .cont .row100 .col .inputbox input,
+ .con .row100 .col .inputbox input
+ {
+ position: absolute;
+ width: 100%;
+ height:100%;
+ background: transparent;
+ box-shadow: none;
+ border: none;
+ outline: none;
+ font-size: 18px;
+ padding: 0 10px;
+ top: 10px;
+ z-index:1;
+ color: #fff;
+ }
+ .container .row100 .col .inputbox .text,
+ .cont .row100 .col .inputbox .text,
+ .con .row100 .col .inputbox .text
+ {
+ position: absolute;
+ top: 0;
+ left: 0;
+ line-height: 4 0px;
+ font-size: 18px ;
+ padding: 0 10px;
+ display: block;
+ transition: 0.5s;
+ pointer-events: none;
+ }
+ .container .row100 .col .inputbox input:focus +.text,
+ .container .row100 .col .inputbox input:valid +.line,
+ .cont .row100 .col .inputbox input:focus +.text,
+ .cont .row100 .col .inputbox input:valid +.line,
+ .con .row100 .col .inputbox input:focus +.text,
+ .con .row100 .col .inputbox input:valid +.line
+ {
+ top: -35px;
+ left: -10px;
+ }
+ .container .row100 .inputbox .line,
+ .cont .row100 .inputbox .line,
+ .con .row100 .inputbox .line
+ {
+ position: absolute;
+ bottom: 0;
+ display: block;
+ width: 100%;
+ height: 2px;
+ background:rgb(255, 52, 82) ;
+ transition: 0.5s;
+ border-radius: 2px;
+ pointer-events: none;
+ }
+ .container .row100 .col .inputbox input:focus ~.line,
+ .container .row100 .col .inputbox input:valid ~.line,
+ .cont .row100 .col .inputbox input:focus ~.line,
+ .cont .row100 .col .inputbox input:valid ~.line,
+ .con .row100 .col .inputbox input:focus ~.line,
+ .con .row100 .col .inputbox input:valid ~.line
+ {
+ height: 40px;
+ }
+ .container .row100.inputbox,
+ .cont .row100.inputbox,
+ .con .row100.inputbox
+ {
+ position: relative;
+ height: 100px;
+ width: 100%;
+ padding: 10px 0px;
+ }
+ input[type="submit"]
+ {
+ border:rgb(255, 52, 82);
+ border-radius: 100px;
+ height: 40px;
+ padding: 7px 35px;
+ cursor: pointer;
+ outline: none;
+ background: rgb(255, 52, 82);
+ margin-left: 100px;
+ color: #fff;
+ font-size: 18px;
+ border-radius:2px;
+ }
+.contacts
+{
+ background: #333743;
+}
+.contacts .contactbox h3
+{
+
+ font-size: 1.5em;
+ color: #fff;
+ font-weight: 200;
+ line-height: 1em;
+ align-items: flex-start;
+}
+.contacts .contactbox
+{
+ margin-left: 5px;
+ font-size: 1.5em;
+ color: #fff;
+ line-height: 1.5em;
+}
+.Contactcontent{
+ position: relative;
+}
+.Contactcontent .contactbox{
+ position: relative;
+ padding: 40px 0;
+ display: flex;
+}
+.Contactcontent .contactbox .icon{
+ min-width: 40px;
+ padding-top: 35px;
+ color: #fff;
+ display: flex;
+ margin-left: 40px;
+ font-size: 36px;
+}
+.Contactcontent .contactbox .text{
+ display: flex;
+ margin-left: 20px;
+ color: #fff;
+ width: 300px;
+ flex-direction: column;
+ font-weight: 100;
+}
+.Contactcontent .contactbox .text h3{
+ font-weight: 400;
+ color: #2196f3;
+ margin-bottom: 5px;
+ margin-left: 20px;
+}
+.contactPicture{
+ margin-top: -525px;
+ margin-right: 1050px;
+ float: right;
+ display: flex;
+}
+.contactText{
+ font-size: 20px;
+ margin-top: -350px;
+ margin-right: 30px;
+ float: right;
+ display: flex;
+}
+.contacts .social-menu ul {
+ margin-top: -120px;
+ margin-right: 60px;
+ float: right;
+ display: flex;
+}
+.contacts .social-menu ul li {
+ list-style: none;
+ margin: 0 10px;
+}
+.contacts .social-menu ul li .fa {
+ color: #000000;
+ font-size: 30px;
+ line-height: 70px;
+ transition: .5s;
+}
+.contacts .social-menu ul li a {
+ position: relative;
+ display: block;
+ width: 75px;
+ height: 75px;
+ border-radius: 50%;
+ background-color: white;
+ text-align: center;
+ transition: 0.5s;
+ transform: translate(0,0px);
+ box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.contacts .social-menu ul li a:hover {
+ transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+@keyframes type {
+ 0% {
+ width: 0ch;
+ }
+ 100% {
+ width: 35ch;
+ }
+}
